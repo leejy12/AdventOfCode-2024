@@ -14,7 +14,7 @@ int main() {
     int score = 0;
     for (const auto [n, cnt] : left) {
         if (right.contains(n)) {
-            score += n * left[n] * right[n];
+            score += n * cnt * right[n];
         }
     }
 
