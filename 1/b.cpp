@@ -1,22 +1,20 @@
 #include <iostream>
 #include <map>
 #include <print>
-#include <vector>
 
 int main() {
     int l, r;
-    std::vector<int> left;
-    std::map<int, int> cnt;
+    std::map<int, int> left, right;
 
     while (std::cin >> l >> r) {
-        left.push_back(l);
-        cnt[r]++;
+        left[l]++;
+        right[r]++;
     }
 
     int score = 0;
-    for (const int x : left) {
-        if (cnt.contains(x)) {
-            score += x * cnt[x];
+    for (const auto [n, cnt] : left) {
+        if (right.contains(n)) {
+            score += n * left[n] * right[n];
         }
     }
 
