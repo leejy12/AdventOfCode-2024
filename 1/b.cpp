@@ -2,7 +2,8 @@
 #include <map>
 #include <print>
 
-int main() {
+int main()
+{
     int l, r;
     std::map<int, int> left, right;
 

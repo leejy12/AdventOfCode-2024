@@ -5,7 +5,8 @@
 #include <ranges>
 #include <vector>
 
-int main() {
+int main()
+{
     int l, r;
     std::vector<int> left, right;
 
