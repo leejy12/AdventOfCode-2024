@@ -33,3 +33,6 @@
 
 # Debug files
 *.pdb
+
+# VSCode
+.vscode/
