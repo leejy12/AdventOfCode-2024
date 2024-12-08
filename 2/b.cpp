@@ -60,7 +60,6 @@ int main()
     int cnt = 0;
 
     while (std::getline(std::cin, s)) {
-        std::print("{}\t", s);
         std::stringstream ss(s);
         std::vector<int> v;
         while (ss >> x) {
