@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-bool is_safe(const auto &v)
+bool is_safe(const auto& v)
 {
     int diff = 0;
     for (auto t : v | std::views::adjacent<2>) {

@@ -4,7 +4,7 @@
 #include <print>
 #include <string>
 
-std::int64_t mul(const std::string &s)
+std::int64_t mul(const std::string& s)
 {
     int i = 0;
     int status = 0;

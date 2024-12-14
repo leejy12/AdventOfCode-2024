@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 
-bool is_safe(const auto &v)
+bool is_safe(const auto& v)
 {
     int diff = 0;
     for (auto t : v | std::views::adjacent<2>) {
@@ -31,7 +31,7 @@ bool is_safe(const auto &v)
     return true;
 }
 
-bool is_safe_tolerable_brute_force(const auto &v)
+bool is_safe_tolerable_brute_force(const auto& v)
 {
     if (is_safe(v)) {
         return true;
